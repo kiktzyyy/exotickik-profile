@@ -19,7 +19,7 @@
 								wait();
 							until (Vector3.new(1347.7124, 37.3751602, (-1325.6488)) - (game:GetService("Players")).LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3 or _G.Settings.Items["Auto Second Sea"] == false;
 							wait(0.5);
-						elseif
+						elseif (game:GetService("Workspace")).Map.Ice.Door.CanCollide == false and (game:GetService("Workspace")).Map.Ice.Door.Transparency == 1 then
 							if (game:GetService("Workspace")).Enemies:FindFirstChild("Ice Admiral") then
 								for i, v in pairs((game:GetService("Workspace")).Enemies:GetChildren()) do
 									if v.Name == "Ice Admiral" then
