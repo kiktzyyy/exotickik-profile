@@ -4,7 +4,7 @@
 				pcall(function()
 					local MyLevel = (game:GetService("Players")).LocalPlayer.Data.Level.Value;
 					if MyLevel >= 700 and World1 then
-						if (game:GetService("Workspace")).Map.Ice.Door.CanCollide == false and (game:GetService("Workspace")).Map.Ice.Door.Transparency == 1 then
+						if (game:GetService("Workspace")).Map.Ice.Door.CanCollide == true and (game:GetService("Workspace")).Map.Ice.Door.Transparency == 0 then
 							local CFrame1 = CFrame.new(4849.29883, 5.65138149, 719.611877);
 							repeat
 								topos(CFrame1);
